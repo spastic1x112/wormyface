@@ -1,0 +1,8 @@
+{
+  "name": "WormAI - Cyber Security Interface",
+  "description": "A high-performance, terminal-style AI interface inspired by advanced security research tools, powered by Gemini 3 Pro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
