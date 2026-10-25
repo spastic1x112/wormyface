@@ -3,26 +3,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>WormAI | Tactical Interface</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WormGPT | Adversarial AI Terminal Console</title>
+    <meta name="description" content="An authentic replica of WormGPT - an adversarial cybersecurity AI workstation and terminal console.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --safe-top: env(safe-area-inset-top);
-            --safe-bottom: env(safe-area-inset-bottom);
-        }
         body {
             background-color: #020617;
             color: #ecfdf5;
             font-family: 'Fira Code', monospace;
             margin: 0;
             overflow: hidden;
-            touch-action: manipulation;
             height: 100vh;
-            height: -webkit-fill-available;
         }
         
         #matrix-canvas {
@@ -67,13 +62,6 @@
             0% { opacity: 0.98; }
             50% { opacity: 1; }
             100% { opacity: 0.99; }
-        }
-
-        /* Foldable Optimization */
-        @media (max-aspect-ratio: 1/2) {
-            .terminal-container {
-                padding-bottom: calc(var(--safe-bottom) + 20px);
-            }
         }
     </style>
 <script type="importmap">

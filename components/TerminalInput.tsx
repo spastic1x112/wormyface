@@ -164,7 +164,7 @@ const TerminalInput: React.FC<TerminalInputProps> = ({
         onBlur={() => setTimeout(() => setShowPopup(false), 200)}
         onFocus={() => value && suggestions.length > 0 && setShowPopup(true)}
         placeholder={placeholder}
-        className={`flex-1 bg-transparent border-none focus:ring-0 text-transparent caret-${isRed ? 'red' : 'green'}-500 py-4 px-3 text-sm outline-none relative z-10 w-full`}
+        className={`flex-1 bg-transparent border-none focus:ring-0 text-transparent ${isRed ? 'caret-red-500' : 'caret-green-500'} py-3 px-3 text-sm font-mono outline-none relative z-10 w-full`}
         disabled={disabled}
         autoComplete="off"
         spellCheck="false"

@@ -1,6 +1,6 @@
 {
-  "name": "WormAI - Cyber Security Interface",
-  "description": "A high-performance, terminal-style AI interface inspired by advanced security research tools, powered by Gemini 3 Pro.",
+  "name": "WormGPT - Adversarial AI Terminal Console",
+  "description": "An authentic replica of WormGPT - an adversarial cybersecurity AI terminal console with multi-session chat, system telemetry, and code execution sandbox.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

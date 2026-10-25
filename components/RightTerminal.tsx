@@ -108,14 +108,14 @@ const RightTerminal: React.FC<RightTerminalProps> = ({ externalLogs, onClose, is
   const threatLevel = getThreatLevel();
 
   return (
-    <div className={`w-full lg:w-80 h-full ${isOverride ? 'bg-red-950/5' : 'bg-black'} border-l border-zinc-900 flex flex-col text-[10px] font-mono transition-all duration-700`}>
+    <div className={`w-full lg:w-80 h-full ${isOverride ? 'bg-red-950/10' : 'bg-black'} border-l border-zinc-900 flex flex-col text-[10px] font-mono transition-all duration-700 shrink-0`}>
       {onClose && (
-        <button onClick={onClose} className="lg:hidden p-4 text-zinc-500 border-b border-zinc-900 flex items-center justify-center gap-2">
+        <button onClick={onClose} className="lg:hidden p-3 text-zinc-400 hover:text-white border-b border-zinc-900 flex items-center justify-center gap-2 bg-zinc-950">
           CLOSE TELEMETRY
         </button>
       )}
 
-      <div className={`p-4 border-b border-zinc-900 ${isOverride ? 'bg-red-950/10' : 'bg-zinc-950/50'}`}>
+      <div className={`p-4 border-b border-zinc-900 ${isOverride ? 'bg-red-950/20' : 'bg-zinc-950/70'}`}>
         <div className={`${isOverride ? 'text-red-500' : 'text-zinc-500'} font-bold mb-3 uppercase tracking-widest flex items-center gap-2`}>
           <span className={`w-1.5 h-1.5 ${isOverride ? 'bg-red-500 animate-ping' : 'bg-amber-500'} rounded-full`}></span>
           {isOverride ? 'Override_Telemetry' : 'System_Telemetry'}
